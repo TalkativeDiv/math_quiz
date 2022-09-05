@@ -1,0 +1,12 @@
+@import url('https://rsms.me/inter/inter.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply transition-all;
+}
+input.modal-closing-trick:checked ~ div {
+  display: none !important;
+}
