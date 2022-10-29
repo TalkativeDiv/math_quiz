@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Math Quiz - Login</title>
+    <link href="./css/style.css" rel="stylesheet" />
+    <script src="./ts/login.ts" defer async type="module"></script>
+  </head>
+  <body class="grid min-h-screen place-items-center bg-blue-700">
+    <main
+      class="w-full max-w-xs p-5 m-auto bg-blue-200 border-2 rounded-xl shadow-blue-400"
+    >
+      <header>
+        <h1 class="text-2xl font-bold text-center text-blue-500">Math Quiz</h1>
+        <br />
+      </header>
+
+      <form id="loginForm">
+        <div>
+          <label class="block mb-2 text-blue-500" for="username">Name 1</label>
+          <input
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 focus:outline-none"
+            type="text"
+            id="exampleInputName1"
+            name="name1"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label class="block mb-2 text-indigo-500" for="password"
+            >Name 2</label
+          >
+          <input
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 focus:outline-none"
+            type="text"
+            name="name2"
+            id="exampleInputName2"
+            required=""
+            field_signature="3578122370"
+            form_signature="4390820221997647964"
+            visibility_annotation="true"
+          />
+        </div>
+        <br />
+        <div class="flex flex-col items-start justify-center">
+          <button
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none w-full"
+            type="submit"
+          >
+            Next ->
+          </button>
+          <a
+            class="text-white bg-slate-700 hover:bg-slate-800 text-center focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none w-full"
+            href="https://github.com/TalkativeDiv/math_quiz"
+          >
+            Github
+          </a>
+        </div>
+      </form>
+    </main>
+    <noscript>
+      <div
+        class="relative z-10"
+        aria-labelledby="modal-title"
+        role="dialog"
+        aria-modal="true"
+      >
+        <div
+          class="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-75"
+        ></div>
+
+        <div class="fixed inset-0 z-10 overflow-y-auto">
+          <div
+            class="flex items-end justify-center min-h-full p-4 text-center sm:items-center sm:p-0"
+          >
+            <div
+              class="relative overflow-hidden text-left transition-all transform bg-white rounded-lg shadow-xl sm:my-8 sm:w-full sm:max-w-lg"
+            >
+              <div class="px-4 pt-5 pb-4 bg-white sm:p-6 sm:pb-4">
+                <div class="sm:flex sm:items-start">
+                  <div
+                    class="flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto bg-red-100 rounded-full sm:mx-0 sm:h-10 sm:w-10"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6 text-red-600"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+                      />
+                    </svg>
+                  </div>
+                  <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                    <h3
+                      class="text-lg font-medium leading-6 text-gray-900"
+                      id="modal-title"
+                    >
+                      What just happened?
+                    </h3>
+                    <div class="mt-2">
+                      <p class="text-sm text-gray-500">
+                        For full functionality of this site it is necessary to
+                        enable JavaScript.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="px-4 py-3 bg-gray-50 sm:flex sm:flex-row-reverse sm:px-6"
+              >
+                <meta http-equiv="refresh" content="2" />
+                <a
+                  href="https://www.enable-javascript.com/#pnlcurrentBrowser"
+                  target="_blank"
+                  class="inline-flex justify-center w-full px-4 py-2 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:ml-3 sm:w-auto sm:text-sm"
+                  >How To Enable Javascript</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </noscript>
+  </body>
+</html>

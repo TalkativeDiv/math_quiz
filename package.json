@@ -1,0 +1,37 @@
+{
+	"name": "maf-quiz",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "parcel src/*.html",
+		"start:clean": "npm run clean && parcel src/*.html",
+		"build": "parcel build",
+		"lint": "eslint . --cache --ext .js,.jsx,.ts,.tsx",
+		"lint:fix": "eslint . --fix --cache --ext .js,.jsx,.ts,.tsx",
+		"format": "prettier --check .",
+		"format:fix": "prettier --write .",
+		"clean": "del .parcel-cache dist",
+		"prepare": "husky install"
+	},
+	"author": "Abhi",
+	"license": "MIT",
+	"lint-staged": {
+		"**/*.{js,jsx,ts,tsx}": [
+			"npx prettier --write",
+			"npx eslint"
+		]
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.39.0",
+		"@typescript-eslint/parser": "^5.39.0",
+		"eslint": "^8.25.0",
+		"eslint-config-prettier": "8.5.0",
+		"husky": "^8.0.0",
+		"lint-staged": "^13.0.3",
+		"parcel": "^2.7.0",
+		"postcss": "^8.4.17",
+		"prettier": "2.7.1",
+		"tailwindcss": "^3.1.8"
+	}
+}
